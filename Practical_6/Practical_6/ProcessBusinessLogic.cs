@@ -24,7 +24,7 @@ namespace Practical_6
             ProcessCompleted?.Invoke();
         }
 
-        public static void bl_ProcessCompleted()
+        public static void blProcessCompleted()
         {
             Console.WriteLine("Method Invoked");
         }
@@ -32,7 +32,7 @@ namespace Practical_6
         public static void Main()
         {
             ProcessBusinessLogic pbl = new ProcessBusinessLogic();
-            pbl.ProcessCompleted += bl_ProcessCompleted; // register with an event
+            pbl.ProcessCompleted += blProcessCompleted; // register with an event
             pbl.StartProcess();
         }
 
