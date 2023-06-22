@@ -21,11 +21,11 @@ namespace Calculator
                 Console.WriteLine("The multiplication of [" + num1 + "] and [" + num2 + "] is -> " + (num1 * num2));
                 Console.WriteLine("The division of [" + num1 + "] and [" + num2 + "] is -> " + (num1 / num2));
             }
-            catch
+            catch(Ecxeption ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Error!");
-               // Console.WriteLine(e.Message);
+                Console.WriteLine(ex.Message);
             }
         }
     }
